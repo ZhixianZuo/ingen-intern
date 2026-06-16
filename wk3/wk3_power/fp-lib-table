@@ -1,0 +1,4 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "bms_lib") (type "KiCad") (uri "C:/Users/29663/OneDrive/Desktop/bms_lib.pretty") (options "") (descr ""))
+)
