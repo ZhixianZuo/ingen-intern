@@ -1,0 +1,13 @@
+LTspice 24.0.12 for Windows
+Circuit: * C:\Users\29663\ingen-intern\wk6\cmos_char.asc
+Start Time: Fri Jul 17 05:17:32 2026
+solver = Normal
+Maximum thread count: 16
+tnom = 27
+temp = 27
+method = modified trap
+
+vth_cc: v2=0.442987 at 0.442987
+
+Total elapsed time: 0.063 seconds.
+

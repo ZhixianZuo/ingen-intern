@@ -1,0 +1,20 @@
+LTspice 24.0.12 for Windows
+Circuit: * C:\Users\29663\ingen-intern\wk6\pmos_char.asc
+Start Time: Fri Jul 17 05:25:51 2026
+solver = Normal
+Maximum thread count: 16
+tnom = 27
+temp = 27
+method = modified trap
+WARNING: Node N002 is floating.
+
+WARNING: Less than two connections to node n002.  This node is used by m1.
+
+gm_max: MAX(abs(d(id(m1))))=0.000770728 FROM 1 TO 0
+vg0: v1=0.009 at 0.009
+i0: abs(id(m1))=0.000255348 at 0.009
+vg_le: vg0 + i0/gm_max=0.340308
+vth_le_abs: 1.0 - vg_le=0.659692
+
+Total elapsed time: 0.066 seconds.
+
