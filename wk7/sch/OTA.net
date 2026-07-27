@@ -1,0 +1,37 @@
+* C:\Users\29663\ingen-intern\wk6\OTA.asc
+M1 N010 Via N017 N011 PMOS l=200n w=2u
+M2 N010 outb N018 N012 PMOS l=200n w=2u
+M3 outa N016 0 N022 NMOS l=200n w=2u m=5
+M4 outb N013 0 N021 NMOS l=200n w=2u m=5
+M5 N016 V_bias2 N017 0 NMOS l=200n w=2u
+M6 N013 V_bias2 N018 0 NMOS l=200n w=2u
+M7 N017 V_bias1 0 N019 NMOS l=200n w=2u m=2
+M8 N018 V_bias1 0 N020 NMOS l=200n w=2u m=2
+M9 N001 V_bias4 N007 N002 PMOS l=200n w=2u
+M10 N001 V_bias4 N009 N004 PMOS l=200n w=2u
+M11 N001 V_bias4 N008 N003 PMOS l=200n w=2u m=2
+M12 N007 V_bias3 N016 N001 PMOS l=200n w=2u
+M13 N009 V_bias3 N013 N001 PMOS l=200n w=2u
+M14 N008 V_bias3 N010 N001 PMOS l=200n w=2u m=2
+M15 N001 V_bias5 outa N005 PMOS l=200n w=2u m=5
+M16 N001 V_bias5 outb N006 PMOS l=200n w=2u m=5
+C1 outa N015 1.1p
+C2 N014 outb 1.1p
+R1 N016 N015 1.45k
+R2 N014 N013 1.45k
+V1 N001 0 1.2
+V3 V_bias2 0 0.7
+V4 V_bias3 0 0.45
+V5 V_bias4 0 0.65
+V6 V_bias5 0 0.65
+V7 Via 0 PULSE(0.5 0.7 10n 1n 1n 500n 1u)
+C3 outa 0 5p
+C4 outb 0 5p
+V2 V_bias1 0 0.3
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\Users\29663\AppData\Local\LTspice\lib\cmp\standard.mos
+.include ptm45.lib.txt
+.tran 0 1.5u 0 10p
+.backanno
+.end
